@@ -13,7 +13,7 @@ RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
 
 
 # 运行时阶段
-FROM alpine:3.13
+FROM alpine:3.21
 
 # 安裝依賴包
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tencent.com/g' /etc/apk/repositories \
