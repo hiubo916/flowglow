@@ -33,7 +33,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar .
 
 # 暴露端口, 所有端口必須一致
-EXPOSE 80
+EXPOSE 8123
 
 # 执行启动命令, 只有最后一行CMD命令会被执行
-CMD ["java", "-jar", "/app/flow-backend-0.0.1.jar"]
+CMD ["java", "-jar", "/app/flow-backend-0.0.1.jar","--spring.profiles.active=prod"]
