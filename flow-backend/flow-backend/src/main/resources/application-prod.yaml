@@ -1,2 +1,8 @@
-server:
-  port: 8123
+spring:
+  application.name: flow-backend
+  # DataSource Config
+#  datasource:
+#    # MySQL
+#    url: jdbc:mysql://180.184.51.138:3306/flow?useSSL=false&serverTimezone=Asia/Shanghai
+#    # Postgres
+##    url: jdbc:postgresql://180.184.51.138:5432/flow
